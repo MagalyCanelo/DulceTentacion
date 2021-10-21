@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    text-align: center;
+    padding: 30px 0px 0 0;
+}
+
+nav > a{
+    color: #fc1a66;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+body{
+    background: #ffd2d2;
+}
+
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+}
+
+.contenido-slider{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contenido-slider:nth-child(2){
+    background: #ffd2d2;
+    color: rgb(0, 0, 0);
+}
+
+.contenido-slider:nth-child(3){
+    background: #ffd2d2;
+}
+
+.contenido-slider > img{
+    margin-right: 45px;
+    width: 400px;
+}
+
+.imagen > img{
+    width: 900px;
+    margin: center;
+}
+
+.contenido-slider > div{
+    width: 40%;
+}
+
+.contenido-slider h2{
+    margin-left: 45px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Merienda', cursive;
+    color: #fc1a66;
+    font-size: 45px;
+    margin-bottom: 33px;
+}
+
+.contenido-slider p{
+    margin-left: 45px;
+    font-weight: 400px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 23px;
+}
+
+@media screen and (max-width:900px){
+    .contenido-slider > img{
+        width: 250px;
+    }
+
+    .contenido-slider > div{
+        width: 40%;
+    }
+
+    .contenido-slider h2{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .contenido-slider{
+       flex-direction: column-reverse;
+    }
+
+    .contenido-slider > div{
+        width: 80%;
+    }
+
+}
